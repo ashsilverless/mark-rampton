@@ -1,0 +1,16 @@
+/* ~~~~~~~~~~ About -> Booking with us ~~~~~~~~~~ */
+
+.template-booking-with-us {
+
+    .feature {
+        border-bottom: 4px solid #ededed;
+
+        &__title {
+            margin: 0;
+            text-align: center;
+            color: $element__green;
+            @extend h3;
+            @include lato('normal');
+        }
+    }
+}

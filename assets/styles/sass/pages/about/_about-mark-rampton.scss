@@ -1,0 +1,46 @@
+/* ~~~~~~~~~~ About -> About Mark Rampton ~~~~~~~~~~ */
+
+.template-about-mark-rampton {
+
+    .people {
+        .single-man {
+            margin-top: 50px;
+
+            @media (max-width: 991px) {
+                margin-top: 35px;
+            }
+
+            &.no-margin {
+                margin-top: 0;
+
+                @media (max-width: 991px) {
+                    margin-top: 50px;
+                }
+            }
+
+            &__position {
+                color: $element__green;
+                font-size: 16px;
+                line-height: 22px;
+
+                @media (max-width: 1199px) {
+                    font-size: 15px;
+                    line-height: 21px;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            &__content {
+                text-align: left;
+                margin-top: 35px;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+
+}

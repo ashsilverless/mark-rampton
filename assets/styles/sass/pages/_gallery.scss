@@ -1,0 +1,39 @@
+
+/* ~~~~~~~~~~ Homepage ~~~~~~~~~~ */
+
+.template-about-gallery {
+	.image-gallery {
+		margin-top: 35px;
+
+		.single-image {
+			position: relative;
+
+			.thumbnail {
+				height: 349px;
+
+				@media(max-width: 1199px) {
+				    height: 200px;
+				}
+
+				@media(max-width: 767px) {
+				    bottom: 120px;
+				}
+			}
+
+			.inside-wrapper {
+			    width: 100%;
+			    top: 0;
+			}
+		}
+	}
+
+	.mix-it-up {
+		&__containers {
+
+			[class*=mix] {
+			    display: none;
+			    width: 32%;
+			}
+		}
+	}
+}

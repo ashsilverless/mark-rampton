@@ -1,0 +1,760 @@
+Style - /*
+Theme Name: Mark Rampton
+Author: Code23
+Author URI: http://www.code23.com
+Description: Mark Rampton Wordpress Theme 2018
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/* AMENDS FROM MR */
+
+html {
+    /* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  }
+
+body {
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    color: #555;
+    background-color: #ddd;
+    font-size: 18px;
+    line-height: 1.4em;
+    letter-spacing: 0;
+}
+
+.hello-section__title, 
+.template-booking-with-us .feature__title, 
+h1, 
+h2, 
+h3, 
+h4 {
+    font-weight: 700;
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+}
+
+
+p {
+    text-align: justify;
+    }		
+
+.text-center p {
+	text-align: center;
+	}
+
+body img {
+    margin-top: 0;
+    max-width: 100%;
+}
+
+header.header .navbar-default {
+    background: transparent;
+}
+
+header.header .navbar-default:hover {
+    background: #26280bcc;
+}
+
+header.header:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: red;
+    z-index: 1;
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+    opacity: .3;
+}
+
+.quote {
+    background: #25270a;
+    color: white;
+    text-align: center;
+    padding: 2em 0 3em;
+    line-height: 1.4;
+}
+
+p.body {
+    font-size: 18px;
+    text-align: center;
+}
+
+p.body span {
+    display: block;
+    font-size: .8em;	
+}
+
+.supporting {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.image-leader {
+    margin: 2em 0;
+    position: relative;
+}
+
+.image-leader a {
+    display: block;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+	}
+
+.image-leader img,	
+.image-leader img {
+    max-width: none;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    width: auto;
+	}	
+
+.image-leader .row >  div {
+	height: 300px;
+}
+
+
+.image-leader .content-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-leader .content-wrap p {
+    background: #25270aba;
+    padding: 5px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: .5s ease all;
+    position: relative;
+    margin-top: 25px;
+}
+
+/*.image-leader .content-wrap p:before,
+.image-leader .content-wrap p:after {
+	content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: white;
+    opacity:0;
+	}
+
+.image-leader .content-wrap p:after {
+	left: initial;
+	right: -10px;
+	}
+
+.image-leader a:hover > .content-wrap p:before {
+	opacity 1;
+	}
+*/
+	
+#int {
+    position: absolute;
+    height: 230px;
+    width: 1px;
+    background: red;
+    margin-top: -230px;
+    opacity: 0;
+}
+	
+.sl-label {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    }
+ 
+.sl-label p {    
+    text-align: left;
+    position: absolute;
+    transform: rotate(90deg);
+    padding: 0px 10px;
+    margin: 0;
+    font-size: 10px;
+    color: #3e3e3e;
+    background: #9c9f7e;
+    transform-origin: 0 0;
+    display: inline-block;
+    white-space: nowrap;  	
+    text-transform: uppercase;
+}
+
+.sl-label p:after {
+    content: '';
+    right: -11px;
+    top: 0px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 0 0 11px;
+    border-color: transparent transparent transparent #6b6d56;
+}
+
+.image-leader a:hover .content-wrap p {
+	background: transparent;
+    font-weight: 900;
+    box-shadow: 0 0 0px 3px white;
+    }
+
+.image-leader + h2 {
+    font-size: 18px;
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+    display: block;
+    color: #5e631d;
+}
+
+.hello-section {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.hello-section.align-bottom {
+    background-position: bottom;
+}
+
+
+.destination-info,
+.experience-info,
+.lodge-info,
+.lodge-detail,
+.landing-page-intro {
+	background: white;
+    padding: 2em 0;	
+}
+
+.destination-info h2,
+.experience-info h2,
+.lodge-info h2,
+.lodge-detail h2,
+.lodge-card h2,
+.landing-page-intro h2 {
+    text-align: left;
+    font-size: 24px;
+    color: #25270a;
+    margin-top: 0;
+    line-height: 1.3em;    
+}
+
+.ul-panel {
+	margin-top:2em;
+	}
+
+.experiences .item {
+	margin-bottom: 20px;
+	}
+
+.experiences h3 {
+    text-align: center;
+    margin: 2em 0 1em;
+}
+
+.lodge-info p {
+    text-align: justify;
+	}
+
+.destination-info p:first-of-type,
+.experience-info p:first-of-type,
+.lodge-info p:first-of-type {
+	font-size: 22px;
+    line-height: 1.3em;
+    font-weight: 600;
+	color: #68733d;  
+	column-count:1;  
+}
+
+.lodge-info .lodge-card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.lodge-info p:first-of-type {
+	text-align: justify;
+}
+
+.lodge-info h2 {
+	text-align: center;  
+}
+
+.lodge-info .lodge-card h2 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1em;
+    color: #68723d;
+}
+	}
+	
+.destination-info img {
+	max-width: 100%;
+	}
+	
+.experience-info img {
+    margin-top: 40px;
+}
+
+
+.destination-info ul,
+.experience-info ul,
+.lodge-info ul {
+    font-size: 16px;
+    line-height: 1.5em;
+    list-style-type: none;
+    margin-left: 2em;
+}
+
+.ul-panel h2 {
+	text-align: center;
+	}
+
+.experience-info ul,
+.destination-info ul {
+    text-align: center;
+}
+
+body .experience-info li,
+body .destination-info li {
+    margin: 0 2em .5em 2em;
+    display: inline-block;
+}
+
+.lodge-info ul {
+    margin-left: 0;
+}
+
+.destination-info li,
+.experience-info li,
+.lodge-info li {
+    position: relative;
+    text-indent: 0;
+    padding: 0;
+    margin: 0 0 .5em 2em;
+}
+
+.lodge-info li {
+    position: relative;
+    text-indent: 0;
+    padding: 0;
+    margin: 0 2em .5em 1em;
+    display: inline-block;
+}
+
+.destination-info li:before,
+.experience-info li:before {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -1em;
+    background: #cecece;
+    top: 9px;
+    border-radius: 50px;
+	}
+
+.lodge-info li:before {
+	position: absolute;
+    font-family: 'fontAwesome';
+    content: "\f0da";
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .6;
+    left: -1em;
+	}
+
+a.main-cta {
+    display: block;
+    background: #68733d;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+a.main-cta.hide-avail {
+	display: none;
+	}
+
+.experience-info p.context {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6d6d6d;
+    }
+
+.experience-info p.explore {    
+    display: inline-block;
+    border: 3px solid #68723d;
+    padding: 5px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Noto Serif';
+    text-transform: uppercase;   	
+}
+
+.lodges-leader .inner {
+    background-image: url(http://markrampton.wpengine.com/wp-content/uploads/2016/12/MF_2013_062-307.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    margin-bottom: 2em;
+    color: white;
+    position: relative;
+}
+
+.inner:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #00000054;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.lodges-leader .inner h3 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    z-index: 10;
+    margin: 3em 0 0;
+}
+
+.lodges-leader .inner p {
+    padding: 2em 2em 1em;
+    text-align: center;
+    margin: 0;
+    z-index: 10;    
+}
+
+.lodges-leader .inner a {
+    font-size: 18px;
+    line-height: 33px;
+    border-radius: 2px;
+    border: 4px solid white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 2em 0 3em;
+    color: white;
+    z-index: 10;  
+}
+
+.lodge-leader-outer-wrapper {
+	margin:3em 
+	}
+.lodge-leader-wrapper {
+    background: #68733d;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.lodge-leader-wrapper img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 1em;
+	}
+
+.lodge-leader-wrapper h3 {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+    color: white;
+}
+
+.lodge-info .lodge-leader-wrapper p {
+	color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 1em;
+}
+
+.lodge-info .lodge-leader-wrapper a {
+    background: #25270a;
+    display: block;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Noto Serif';
+    margin-top: 1em;
+}
+
+.lodge-info .lodge-leader-wrapper a p {
+    padding: 0 0 1em;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-top: 0;
+    }
+
+.lodge-info .lodge-leader-wrapper a img {
+    width: 40px;
+    margin-bottom: 0;
+    opacity:.5;
+    transition: .5s ease all;
+}
+
+.lodge-info .lodge-leader-wrapper a:hover img {
+	margin-top: 5px;
+	margin-bottom:-5px;
+	opacity:1;
+}
+
+.lodge-card {
+	margin: 5em 0;
+	}
+	
+.lodge-card p {
+	margin-top:1em;
+	}
+
+.lodge-card p:first-of-type {	
+    font-weight: 600;
+    color: #25270a;	
+}
+
+body .owl-carousel {
+	display: block;
+	overflow:visible;
+}
+
+.owl-carousel .item img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
+.card .image-wrapper {
+	position: relative;
+	}
+	
+.card .image-wrapper:before {
+position: absolute;
+    content: '';
+    width: 100%;
+    height: 5em;
+    bottom: 0;
+    z-index: 5;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+	}	
+
+.card {
+	margin: 2em 0;
+	}
+	
+.card h2 {
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+    color: white;
+    bottom: 1em;
+    width: 100%;
+    }		
+	
+.card p {
+    background: #68733d;
+    margin: 0;
+    padding: 2em;
+    color: white;
+    }	
+
+.card a {
+    background: #25270a;
+    display: block;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Noto Serif';
+    margin-top: 0;
+}
+
+.supporting-gallery {
+	margin:2em 0;
+	}
+
+.supporting-gallery .owl-item {
+	height:350px;
+	}
+
+.lodge-card .supporting-gallery .owl-item {
+    height: 250px;
+    position: relative;
+	}
+	
+.supporting-gallery .item {
+    display: block;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.supporting-gallery.owl-carousel .item img {
+    max-width: none;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    }	
+
+.owl-stage-outer {
+	overflow: hidden;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: -30px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: -30px;
+    left: initial;
+}
+
+.owl-carousel .owl-nav .owl-prev:before{
+    font-family: 'fontAwesome';
+    content: "\f053";
+    margin-right:10px;
+}
+.owl-carousel .owl-nav .owl-next:after{
+    font-family: 'fontAwesome';
+    content: "\f054";
+    margin-right:10px;
+}
+
+.template-about-gallery .image-gallery .single-image .inside-wrapper {
+    height: 100%;
+}
+
+
+/* ===== MQ ===== */
+
+@media only screen and (max-width: 1100px) {
+
+header.header .navbar-default .navbar-collapse .navbar-nav>li>a {
+    padding: 30px 5px 15px;
+}
+
+}/*End MQ*/
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+.overseas-button {
+	top:30px;
+	}
+
+p.body {
+    padding: 0 .3em;
+}
+
+.supporting {
+    padding: 0 .5em;
+}
+
+.hello-section__title, h2 {
+    text-align: center;
+}
+
+.owl-carousel .owl-nav .owl-next:after,
+.owl-carousel .owl-nav .owl-prev:before {
+    border: 3px solid white;
+    padding: 2px 3px 0px 6px;
+    color: white;
+    font-weight: 100;
+}
+
+.owl-carousel .owl-nav .owl-prev:before {
+    border: 3px solid white;
+    padding: 2px 6px 0px 3px;
+    color: white;
+    font-weight: 100;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    left: 10px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    right: 0;
+}
+
+.single-image__show-gallery img {
+    width: 15px;
+    }
+
+
+
+
+
+
+} /* END MQ */
+
+
+
+
+
+
+
+
