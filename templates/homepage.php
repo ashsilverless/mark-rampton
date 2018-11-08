@@ -14,8 +14,8 @@
         <div class="container">
             <div class="row">
                 <p class="body">"<?php the_field('quote'); ?>"<span>Mark Rampton</span></p>
-
                 <p class="supporting"><?php the_field('supporting_text'); ?></p>
+                <img src="<?php the_field('image'); ?>" />
             </div><!--row-->
         </div><!--container-->
     </section><!--quote-->

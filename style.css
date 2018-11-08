@@ -88,7 +88,7 @@ header.header:after {
     background: #25270a;
     color: white;
     text-align: center;
-    padding: 2em 0 3em;
+    padding: 2em 0;
     line-height: 1.4;
 }
 
@@ -107,6 +107,9 @@ p.body span {
     text-align: center;
     margin-top: 3em;
 }
+
+.quote img {
+	margin-top: 2em;
 
 .image-leader {
     margin: 2em 0;
